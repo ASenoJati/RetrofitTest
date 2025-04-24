@@ -4,13 +4,13 @@ import com.google.gson.annotations.SerializedName;
 
 public class ItemModel {
 
-    @SerializedName("strTeam")
+    @SerializedName("strTeam") // Nama Key di JSON
     private String teamName;
 
-    @SerializedName("strStadium")
+    @SerializedName("strStadium") // Nama Key di JSON
     private String stadiumName;
 
-    @SerializedName("strBadge")
+    @SerializedName("strBadge") // Nama Key di JSON
     private String logo;
 
     public String getTeamName() {

@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class TeamResponse {
-    @SerializedName("teams")
+    @SerializedName("teams") // Nama Array di JSON
     private List<ItemModel> teams;
 
     public List<ItemModel> getTeams() {
