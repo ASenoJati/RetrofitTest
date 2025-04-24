@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
+        // Inisialisasi Recycler View
         rvTeam = findViewById(R.id.rvTeam);
         rvTeam.setLayoutManager(new LinearLayoutManager(this));
 
