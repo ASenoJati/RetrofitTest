@@ -44,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchLaligaTeams(TeamApi api) {
-        Call<TeamResponse> call = api.getEnglishPremierLeague("English Premier League");
-
-        call.enqueue(new Callback<TeamResponse>() {
+        api.getEnglishPremierLeague("English Premier League").enqueue(new Callback<TeamResponse>() {
             @Override
             public void onResponse(Call<TeamResponse> call, Response<TeamResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
@@ -67,9 +65,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchEnglishPremierLeagueTeams(TeamApi api) {
-        Call<TeamResponse> callaus = api.getLaliga("Spanish La Liga");
-
-        callaus.enqueue(new Callback<TeamResponse>() {
+        api.getLaliga("Spanish La Liga").enqueue(new Callback<TeamResponse>() {
             @Override
             public void onResponse(Call<TeamResponse> call, Response<TeamResponse> response) {
                 if (response.isSuccessful() && response.body() != null) {
